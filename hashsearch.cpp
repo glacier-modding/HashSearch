@@ -194,6 +194,13 @@ int main(void)
                     results_per_page = reqJson["number_of_results"].get<int>();
                     results_per_page_string = std::to_string(results_per_page);
 
+                    if(results_per_page > 500) {
+                        results.append("Status: 400\r\n\r\n");
+                        results.append("{\"error\": \"number_of_results exceeds the limit of 500\"}");
+                        std::cout << results;
+                        continue;
+                    }
+
                     resource_type_string = to_lower_case(reqJson["resource_type"].get<std::string>());
 
                     results_per_page_index = reqJson["page_number"].get<int>();
