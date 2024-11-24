@@ -1,6 +1,8 @@
 # HashSearch
 Backend powering [https://hitmandb.glaciermodding.org/](https://hitmandb.glaciermodding.org/)
 
+Originally created by [2kpr](https://github.com/2kpr), uploaded on behalf of them.
+
 ## Building
 
 ### Linux
