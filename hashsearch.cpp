@@ -11,7 +11,7 @@
 #include <stdint.h>
 #include "json.hpp"
 
-std::string hash_list_file_path = "/etc/hashsearch/hash_list.txt";
+std::string hash_list_file_path = "hash_list.txt";
 
 std::string hash_list_string;
 int hash_list_version;
